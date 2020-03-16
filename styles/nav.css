@@ -1,0 +1,12 @@
+.nav__item {
+  margin: 10px; }
+
+.nav__link {
+  text-decoration: none;
+  font-weight: bold;
+  color: #3d4e61;
+  cursor: pointer; }
+  .nav__link:hover {
+    color: rgba(61, 78, 97, 0.8); }
+
+/*# sourceMappingURL=nav.css.map */

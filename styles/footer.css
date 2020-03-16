@@ -1,0 +1,17 @@
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 200px;
+  -webkit-box-shadow: 0 -1px 0 #e1e7ed;
+          box-shadow: 0 -1px 0 #e1e7ed; }
+  .footer__link {
+    text-decoration: none;
+    color: #3d4e61;
+    cursor: pointer; }
+    .footer__link:hover {
+      color: rgba(61, 78, 97, 0.8); }
+
+/*# sourceMappingURL=footer.css.map */
