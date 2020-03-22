@@ -12,9 +12,15 @@
   -webkit-box-shadow: 0 1px 0 #e1e7ed;
           box-shadow: 0 1px 0 #e1e7ed;
   height: 60px; }
+  @media screen and (min-width: 1600px) {
+    .header {
+      width: 1600px;
+      margin: 0 auto; } }
   .header__logo {
     width: 40px;
-    padding: 15px 26px; }
+    padding: 15px 26px;
+    outline: none;
+    cursor: pointer; }
   .header__nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -25,22 +31,24 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-  .header__headshot {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    padding: 15px; }
 
 .nav__item {
   margin: 10px; }
 
 .nav__link {
+  padding: 20px 0;
   text-decoration: none;
   font-weight: bold;
   color: #3d4e61;
   cursor: pointer; }
   .nav__link:hover {
     color: rgba(61, 78, 97, 0.8); }
+
+.nav__headshot {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 15px; }
 
 .main {
   display: grid;
@@ -73,18 +81,27 @@
     padding: 17px;
     font-family: Avenir, serif;
     font-size: 16px;
+    border: 1px solid #e1e7ed;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box; }
+            box-sizing: border-box;
+    border-radius: 3px;
+    outline: none; }
+    .book__search:focus {
+      border: 1px solid gray; }
   .book__btn {
     margin-top: 10px;
     text-align: center;
     line-height: 50px;
     width: 270px;
     height: 50px;
-    background: #fd5c63;
+    background-color: #fd5c63;
     border-radius: 4px;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box; }
+            box-sizing: border-box;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    .book__btn:hover {
+      background-color: gray; }
   .book__btn-title {
     display: block;
     color: #ffff;
@@ -98,7 +115,9 @@
           justify-content: center;
   grid-gap: 200px;
   -webkit-box-shadow: 0 -1px 0 #e1e7ed;
-          box-shadow: 0 -1px 0 #e1e7ed; }
+          box-shadow: 0 -1px 0 #e1e7ed;
+  -webkit-transform: translateX(-79px);
+          transform: translateX(-79px); }
   .footer__link {
     text-decoration: none;
     color: #3d4e61;
@@ -224,5 +243,10 @@ body {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover; }
+
+a {
+  outline: none; }
+  a:focus {
+    border: 1px solid gray; }
 
 /*# sourceMappingURL=style.css.map */

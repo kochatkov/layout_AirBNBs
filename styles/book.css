@@ -21,18 +21,27 @@
     padding: 17px;
     font-family: Avenir, serif;
     font-size: 16px;
+    border: 1px solid #e1e7ed;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box; }
+            box-sizing: border-box;
+    border-radius: 3px;
+    outline: none; }
+    .book__search:focus {
+      border: 1px solid gray; }
   .book__btn {
     margin-top: 10px;
     text-align: center;
     line-height: 50px;
     width: 270px;
     height: 50px;
-    background: #fd5c63;
+    background-color: #fd5c63;
     border-radius: 4px;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box; }
+            box-sizing: border-box;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    .book__btn:hover {
+      background-color: gray; }
   .book__btn-title {
     display: block;
     color: #ffff;

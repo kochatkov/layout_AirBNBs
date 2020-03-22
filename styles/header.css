@@ -12,9 +12,15 @@
   -webkit-box-shadow: 0 1px 0 #e1e7ed;
           box-shadow: 0 1px 0 #e1e7ed;
   height: 60px; }
+  @media screen and (min-width: 1600px) {
+    .header {
+      width: 1600px;
+      margin: 0 auto; } }
   .header__logo {
     width: 40px;
-    padding: 15px 26px; }
+    padding: 15px 26px;
+    outline: none;
+    cursor: pointer; }
   .header__nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -25,10 +31,5 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-  .header__headshot {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    padding: 15px; }
 
 /*# sourceMappingURL=header.css.map */
