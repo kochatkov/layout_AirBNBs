@@ -1,21 +1,21 @@
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 0 100px;
   background: #ffff;
   -webkit-box-shadow: 0 1px 0 #e1e7ed;
-          box-shadow: 0 1px 0 #e1e7ed;
-  height: 60px; }
-  @media screen and (min-width: 1600px) {
-    .header {
-      width: 1600px;
-      margin: 0 auto; } }
+          box-shadow: 0 1px 0 #e1e7ed; }
+  .header__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 1200px;
+    height: 60px;
+    margin: 0 auto; }
   .header__logo {
     width: 40px;
     padding: 15px 26px;
@@ -51,25 +51,40 @@
   padding: 15px; }
 
 .main {
-  display: grid;
+  padding: 10px 50px; }
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  grid-gap: 30px;
-  grid-template-columns: repeat(2, 500px); }
+  max-width: 1200px;
+  margin: 0 auto; }
+  @media screen and (max-width: 1200px) {
+    .container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse;
+      width: 100%; } }
 
 .book {
   display: grid;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 40px auto;
+  margin: 40px;
   padding: 28px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 330px;
   height: 319px;
   border: 1px solid #e1e7ed; }
+  @media screen and (max-width: 1200px) {
+    .book {
+      margin: 40px auto; } }
   .book__price {
     display: inline;
     -webkit-box-sizing: border-box;
@@ -116,8 +131,11 @@
   grid-gap: 200px;
   -webkit-box-shadow: 0 -1px 0 #e1e7ed;
           box-shadow: 0 -1px 0 #e1e7ed;
-  -webkit-transform: translateX(-79px);
-          transform: translateX(-79px); }
+  -webkit-transform: translateX(-45px);
+          transform: translateX(-45px); }
+  @media screen and (max-width: 1200px) {
+    .footer {
+      grid-gap: 20px; } }
   .footer__link {
     text-decoration: none;
     color: #3d4e61;
@@ -156,6 +174,9 @@
           flex-direction: column;
   margin: 40px 0 0 80px;
   width: 450px; }
+  @media screen and (max-width: 1200px) {
+    .apart {
+      margin: 0 auto; } }
   .apart__article {
     margin: 0; }
   .apart__entire {

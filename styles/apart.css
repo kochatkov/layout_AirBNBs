@@ -8,6 +8,9 @@
           flex-direction: column;
   margin: 40px 0 0 80px;
   width: 450px; }
+  @media screen and (max-width: 1200px) {
+    .apart {
+      margin: 0 auto; } }
   .apart__article {
     margin: 0; }
   .apart__entire {

@@ -7,8 +7,11 @@
   grid-gap: 200px;
   -webkit-box-shadow: 0 -1px 0 #e1e7ed;
           box-shadow: 0 -1px 0 #e1e7ed;
-  -webkit-transform: translateX(-79px);
-          transform: translateX(-79px); }
+  -webkit-transform: translateX(-45px);
+          transform: translateX(-45px); }
+  @media screen and (max-width: 1200px) {
+    .footer {
+      grid-gap: 20px; } }
   .footer__link {
     text-decoration: none;
     color: #3d4e61;
